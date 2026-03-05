@@ -18,7 +18,7 @@ Tired of typing your credentials every single time you open your laptop or move 
 
 You do **not** need Python installed. Just follow these steps:
 
-1. Go to the **Releases** section on the right side of this page and download `nust_autologin.exe`.
+1. Go to the **Releases** section on the right side of this page and download `run.exe`.
 2. Move the `.exe` file to your Desktop or Downloads folder and double-click it.
 3. A black terminal window will pop up. Type your **Username** and **Password** and hit Enter. *(Note: Your password will be invisible while you type it—this is normal for security!)*
 4. Mr. Bashir will securely save your details, copy himself to your Windows Startup folder, and then completely vanish.
@@ -30,10 +30,10 @@ You do **not** need Python installed. Just follow these steps:
 
 If you ever change your portal password, Mr. Bashir will be stuck trying to use the old one. To give him your new credentials:
 
-1. Download the `Reset_Login.bat` file from this repository.
+1. Download the `reset_cred.bat` file from this repository.
 2. Double-click it.
 3. This tool will safely stop Mr. Bashir in the background and delete your old saved password file.
-4. Once it finishes, just double-click your main `nust_autologin.exe` file again to type in your new password.
+4. Once it finishes, just double-click your main `run.exe` file again to type in your new password.
 
 ---
 
@@ -43,7 +43,7 @@ Because Mr. Bashir is designed to be completely invisible, there is no physical 
 
 1. Press `Ctrl + Shift + Esc` to open **Task Manager**.
 2. Click on the **Processes** or **Details** tab.
-3. Scroll down until you find `nust_autologin.exe` (or `python.exe` if running from source).
+3. Scroll down until you find `run.exe` (or `python.exe` if running from source).
 4. Right-click it and select **End task**. 
 
-*(Note: He will automatically wake up again the next time you restart your PC. To remove him permanently, delete `nust_autologin.exe` from your `shell:startup` folder).*
+*(Note: He will automatically wake up again the next time you restart your PC. To remove him permanently, delete `run..exe` from your `shell:startup` folder).*
