@@ -4,7 +4,7 @@ echo   BASHIR AUTCONNECT!! YOUR HOSTEL NET MANAGER
 echo ================================================
 echo.
 echo Stopping the background auto-login process...
-taskkill /F /IM run.exe /T >nul 2>&1
+taskkill /F /IM BashirSaab.exe /T >nul 2>&1
 
 echo.
 echo Deleting saved credentials...
