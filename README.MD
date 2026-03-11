@@ -20,23 +20,24 @@ You do **not** need Python installed. Just follow these steps:
 
 1. Go to the **Releases** section on the right side of this page and download `BashirSaab.exe`.
 2. Move the `BashirSaab.exe` file to your Desktop or Downloads folder and double-click it.
+3. A black terminal window will pop up. Type your **Username** and **Password** and hit Enter. *(Note: Your password will be invisible while you type it—this is normal for security!)*
+4. Mr. Bashir will securely save your details, copy himself to your Windows Startup folder, and then completely vanish.
+5. **You're done!** From now on, whenever you boot up your laptop or connect to the campus network, he will handle the login instantly.
+
 
 
 **DISCLAIMER:** Windows might flag this because it's an indie script that runs in the background. Just click 'Keep anyway' or add it to your Defender exclusions.
 
 Here's how to do it:
-1.Press Win + S, type Windows Security, and open it.
+1. Press Win + S, type Windows Security, and open it.
 
-2.Click on Virus & threat protection.
+2. Click on Virus & threat protection.
 
-3.Under the "Virus & threat protection settings" section, click Manage settings.
+3. Under the "Virus & threat protection settings" section, click Manage settings.
 
-4.Scroll all the way down to the Exclusions section and click Add or remove exclusions.
+4. Scroll all the way down to the Exclusions section and click Add or remove exclusions.
 
-5.Click + Add an exclusion, select File, and choose your `BashirSaab.exe` file.
-3. A black terminal window will pop up. Type your **Username** and **Password** and hit Enter. *(Note: Your password will be invisible while you type it—this is normal for security!)*
-4. Mr. Bashir will securely save your details, copy himself to your Windows Startup folder, and then completely vanish.
-5. **You're done!** From now on, whenever you boot up your laptop or connect to the campus network, he will handle the login instantly.
+5. Click + Add an exclusion, select File, and choose your `BashirSaab.exe` file.
 
 ---
 
