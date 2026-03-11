@@ -18,8 +18,21 @@ Tired of typing your credentials every single time you open your laptop or move 
 
 You do **not** need Python installed. Just follow these steps:
 
-1. Go to the **Releases** section on the right side of this page and download `run.exe`.
-2. Move the `.exe` file to your Desktop or Downloads folder and double-click it.
+1. Go to the **Releases** section on the right side of this page and download `BashirSaab.exe`.
+2. Move the `BashirSaab.exe` file to your Desktop or Downloads folder and double-click it.
+**DISCLAIMER:** Windows might flag this because it's an indie script that runs in the background. Just click 'Keep anyway' or add it to your Defender exclusions.
+
+Here's how to do it:
+
+1.Press Win + S, type Windows Security, and open it.
+
+2.Click on Virus & threat protection.
+
+3.Under the "Virus & threat protection settings" section, click Manage settings.
+
+4.Scroll all the way down to the Exclusions section and click Add or remove exclusions.
+
+5.Click + Add an exclusion, select File, and choose your `BashirSaab.exe` file.
 3. A black terminal window will pop up. Type your **Username** and **Password** and hit Enter. *(Note: Your password will be invisible while you type it—this is normal for security!)*
 4. Mr. Bashir will securely save your details, copy himself to your Windows Startup folder, and then completely vanish.
 5. **You're done!** From now on, whenever you boot up your laptop or connect to the campus network, he will handle the login instantly.
@@ -33,7 +46,7 @@ If you ever change your portal password, Mr. Bashir will be stuck trying to use 
 1. Download the `reset_cred.bat` file from this repository.
 2. Double-click it.
 3. This tool will safely stop Mr. Bashir in the background and delete your old saved password file.
-4. Once it finishes, just double-click your main `run.exe` file again to type in your new password.
+4. Once it finishes, just double-click your main `BashirSaab.exe` file again to type in your new password.
 
 ---
 
@@ -43,7 +56,7 @@ Because Mr. Bashir is designed to be completely invisible, there is no physical 
 
 1. Press `Ctrl + Shift + Esc` to open **Task Manager**.
 2. Click on the **Processes** or **Details** tab.
-3. Scroll down until you find `run.exe` (or `python.exe` if running from source).
+3. Scroll down until you find `BashirSaab.exe` (or `python.exe` if running from source).
 4. Right-click it and select **End task**. 
 
-*(Note: He will automatically wake up again the next time you restart your PC. To remove him permanently, delete `run..exe` from your `shell:startup` folder).*
+*(Note: He will automatically wake up again the next time you restart your PC. To remove him permanently, delete `BashirSaab.exe` from your `shell:startup` folder).*
