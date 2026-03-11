@@ -20,10 +20,11 @@ You do **not** need Python installed. Just follow these steps:
 
 1. Go to the **Releases** section on the right side of this page and download `BashirSaab.exe`.
 2. Move the `BashirSaab.exe` file to your Desktop or Downloads folder and double-click it.
+
+
 **DISCLAIMER:** Windows might flag this because it's an indie script that runs in the background. Just click 'Keep anyway' or add it to your Defender exclusions.
 
 Here's how to do it:
-
 1.Press Win + S, type Windows Security, and open it.
 
 2.Click on Virus & threat protection.
