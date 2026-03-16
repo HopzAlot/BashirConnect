@@ -8,13 +8,15 @@ Tired of typing your credentials every single time you open your laptop or move 
 
 ## ✨ Features
 * **Completely Invisible:** Runs silently in the Windows background with zero pop-ups.
-* **Set It & Forget It:** Automatically adds himself to your Windows Startup folder.
+* **Set It & Forget It:** Automatically runs at startup.
 * **Smart Detection:** Only activates when a Fortinet `fgtauth` captive portal intercepts your connection.
 * **Battery Friendly:** Uses virtually zero CPU or RAM.
 
 ---
 
 ## 🚀 How to Set Up Mr. Bashir
+
+For Windows:
 
 You do **not** need Python installed. Just follow these steps:
 
@@ -39,16 +41,34 @@ Here's how to do it:
 
 5. Click + Add an exclusion, select File, and choose your `BashirSaab.exe` file.
 
+
+For Linux:
+
+1. Download the `script(WindowsLinux).py`
+2. Run the Script once and it will run in background in the later sessions.
+
 ---
 
 ## 🔄 How to Reset Your Password
 
 If you ever change your portal password, Mr. Bashir will be stuck trying to use the old one. To give him your new credentials:
 
+For Windows:
+
 1. Download the `reset_cred.bat` file from this repository.
 2. Double-click it.
 3. This tool will safely stop Mr. Bashir in the background and delete your old saved password file.
 4. Once it finishes, just double-click your main `BashirSaab.exe` file again to type in your new password.
+
+Fow Linux:
+
+1. Download the `reset_login.sh` file from the repo.
+2. Make the reset script executable (you only need to do this once):
+    ```bash
+    chmod +x reset_login.sh
+    ```
+3. Run it and it will Stop the service and reset your creds.
+4. Run the script again and type your new password. 
 
 ---
 
@@ -56,9 +76,19 @@ If you ever change your portal password, Mr. Bashir will be stuck trying to use 
 
 Because Mr. Bashir is designed to be completely invisible, there is no physical "X" button to close him. If you ever need to manually stop him from running:
 
+For Windows:
+
 1. Press `Ctrl + Shift + Esc` to open **Task Manager**.
 2. Click on the **Processes** or **Details** tab.
 3. Scroll down until you find `BashirSaab.exe` (or `python.exe` if running from source).
 4. Right-click it and select **End task**. 
 
 *(Note: He will automatically wake up again the next time you restart your PC. To remove him permanently, delete `BashirSaab.exe` from your `shell:startup` folder).*
+
+For Linux:
+
+1. Open your terminal and forcefully kill the background process by running:
+ ```bash
+    pkill -f "script(WindowsLinux).py"
+ ```
+ *(Note: To remove him permanently on desktop Linux, delete the autostart file by running rm ~/.config/autostart/mr_bashir.desktop).*
