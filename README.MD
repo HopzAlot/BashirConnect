@@ -45,6 +45,10 @@ Here's how to do it:
 For Linux:
 
 1. Download the `script(WindowsLinux).py`
+2. Install the requirements using:
+    ```
+    pip install -r requirements.txt
+    ```
 2. Run the Script once and it will run in background in the later sessions.
 
 ---
