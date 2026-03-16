@@ -12,8 +12,15 @@ is_windows = platform.system() == "Windows"
 
 # --- Cross-Platform Path Setup ---
 if is_windows:
+    # We still need this path just to copy the .exe on the first run
     STARTUP_DIR = os.path.join(os.getenv('APPDATA'), 'Microsoft', 'Windows', 'Start Menu', 'Programs', 'Startup')
-    CREDS_FILE = os.path.join(STARTUP_DIR, "wifi_creds.json")
+    
+    # NEW: Create a hidden AppData folder just for Mr. Bashir's memory
+    CONFIG_DIR = os.path.join(os.getenv('LOCALAPPDATA'), 'MrBashir')
+    os.makedirs(CONFIG_DIR, exist_ok=True) # Creates it silently if it doesn't exist
+    
+    # Point the credentials file to the new hidden folder
+    CREDS_FILE = os.path.join(CONFIG_DIR, "wifi_creds.json")
 else:
     # Linux standard hidden config directory
     CONFIG_DIR = os.path.expanduser("~/.config/mr_bashir")

@@ -8,7 +8,7 @@ taskkill /F /IM BashirSaab.exe /T >nul 2>&1
 
 echo.
 echo Deleting saved credentials...
-del "%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\wifi_creds.json" >nul 2>&1
+del /Q "%LOCALAPPDATA%\MrBashir\wifi_creds.json" >nul 2>&1
 
 echo.
 echo Done! Your old password has been completely removed.
