@@ -38,7 +38,7 @@ def enforce_single_instance():
     else:
         # We import fcntl here so Windows doesn't crash trying to find a Linux-only module
         import fcntl
-        lock_file = "/tmp/mr_bashir.lock"
+        lock_file = os.path.join(CONFIG_DIR, "mr_bashir.lock")
         lock_file_pointer = open(lock_file, 'w')
         try:
             # Try to get an exclusive, non-blocking lock on the file
